@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+wemake-python-styleguide = "*"
+mypy = "*"
+pytest = "*"
+requests = "*"
+pytest-asyncio = "*"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+inject = "*"
+asyncio-redis = "*"
+aioredis = "*"
+
+[requires]
+python_version = "3.8"
