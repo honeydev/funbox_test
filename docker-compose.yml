@@ -11,6 +11,8 @@ services:
       - redis
     links:
       - redis
+    environment:
+      - REDISCLOUD_URL=redis://redis
   redis:
     image: redis:alpine
     ports:

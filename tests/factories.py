@@ -18,7 +18,7 @@ def create_links(links_count):
 
     return [
         {
-            'links': (url_factory(), url_factory())
+            'links': (url_factory(), url_factory()),
         }
         for _ in range(links_count)
     ]

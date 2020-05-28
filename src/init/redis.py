@@ -1,3 +1,4 @@
+import os
 
 import aioredis
 
@@ -7,8 +8,8 @@ settings = Settings()
 
 
 async def get_redis_connection():
-
+    """Configure redis client."""
     if settings.test_env:
         return await aioredis.create_redis_pool('redis://localhost:6382')
-    else:
-        return await aioredis.create_redis_pool('redis://localhost:6381')
+
+    return await aioredis.create_redis_pool(os.getenv('REDISCLOUD_URL'))
