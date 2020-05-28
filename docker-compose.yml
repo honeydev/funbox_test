@@ -1,6 +1,16 @@
 version: '3'
 
 services:
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/app/Dockerfile
+    ports:
+      - 80:80
+    depends_on:
+      - redis
+    links:
+      - redis
   redis:
     image: redis:alpine
     ports:

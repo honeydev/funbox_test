@@ -9,6 +9,7 @@ mypy = "*"
 pytest = "*"
 requests = "*"
 pytest-asyncio = "*"
+faker = "*"
 
 [packages]
 fastapi = "*"
@@ -16,6 +17,8 @@ uvicorn = "*"
 inject = "*"
 asyncio-redis = "*"
 aioredis = "*"
+pydash = "*"
+tldextract = "*"
 
 [requires]
 python_version = "3.8"
