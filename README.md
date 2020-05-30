@@ -12,7 +12,7 @@ https://funbox-py.herokuapp.com/docs
 
 docker-compose up
 
-**Комманды**
+**Команды**
 
 * Тесты make test
 * Линтер make lint
